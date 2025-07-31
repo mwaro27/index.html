@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanSweep Solutions - Carpet Cleaning Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #3498db;
+        }
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .about, .testimonials, .contact {
+            background-color: #f9f9f9;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 1rem;
+            text-align: left;
+        }
+        th {
+            background-color: #34495e;
+            color: white;
+        }
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .testimonial {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .contact input, .contact textarea {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact button {
+            background-color: #3498db;
+            color: white;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CleanSweep Solutions</h1>
+        <p>Your Trusted Carpet Cleaning Service</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>About Us: Our Journey to Cleaner Carpets</h2>
+        <p>CleanSweep Solutions Service began as an online venture in Kirgiti, driven by a passion for pristine carpets and exceptional customer service. With two years of dedicated experience in the industry, we've honed our techniques and built a reputation for excellence. We are committed to continuous improvement, always seeking new ways to deliver the best results for your home or business.</p>
+        <p>While we currently operate online, our vision extends to establishing a physical location, allowing us to serve you even better. Our journey is built on trust, quality, and the promise of a truly clean sweep.</p>
+    </section>
+
+    <section id="pricing">
+        <h2>Carpet Sizing Guide & Pricing Calculator</h2>
+        <p> Easily estimate the cost of your carpet cleaning with our transparent pricing. Measure your carpet's length and width, then multiply by Ksh 20 per square foot. These are estimates. For an accurate quote, please use our online booking system or contact us directly.</p>
+        <table>
+            <tr>
+                <th>Carpet Size (Length x Width)</th>
+                <th>Approximate Area (Sq. Ft.)</th>
+                <th>Estimated Price (Ksh)</th>
+            </tr>
+            <tr>
+                <td>5ft x 7ft (Small Rug)</td>
+                <td>35</td>
+                <td>700</td>
+            </tr>
+            <tr>
+                <td>8ft x 10ft (Medium Room)</td>
+                <td>80</td>
+                <td>1,600</td>
+            </tr>
+            <tr>
+                <td>10ft x 12ft (Large Room)</td>
+                <td>120</td>
+                <td>2,400</td>
+            </tr>
+            <tr>
+                <td>12ft x 15ft (Master Bedroom)</td>
+                <td>180</td>
+                <td>3,600</td>
+            </tr>
+            <tr>
+                <td>Living Room (Variable)</td>
+                <td>200-300</td>
+                <td>4,000-6,000</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>Customer Testimonials</h2>
+        <p>Hear what our clients have to say about the CleanSweep Solutions difference. Our commitment to excellence began in Tailand Village, where we built a strong foundation of happy customers.</p>
+        <div class="testimonials-grid">
+            <div class="testimonial">
+                <p>"CleanSweep Solutions transformed my old, stained carpet! It looks brand new. The team was punctual and incredibly thorough. Highly recommend!"</p>
+                <p><strong>- Aisha M., Tailand Village</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"I was amazed by the results. Pet odors that no other cleaner could tackle are completely gone. Professional service from start to finish."</p>
+                <p><strong>- David K., Tailand Village</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"Booking was a breeze, and the cleaning quality exceeded my expectations. My carpets feel soft and look vibrant. CleanSweep is my go-to now!"</p>
+                <p><strong>- Anonymous, Tailand Village</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>At CleanSweep Solutions, your satisfaction is our priority. Let us provide you with a cleaning experience that exceeds your expectations.</p>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 CleanSweep Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
